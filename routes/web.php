@@ -18,6 +18,5 @@ Route::get('/', function () {
 });
 
 Route::post('/', function () {
-    return response('<h1>Test SAML2</h1>')
-        ->redirectTo('/', 200);
+    return view('test');
 });
