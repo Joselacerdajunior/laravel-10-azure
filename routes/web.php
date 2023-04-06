@@ -18,5 +18,6 @@ Route::get('/', function () {
 });
 
 Route::post('/', function () {
-    return response('Test SAML2', 200);
+    return response('<h1>Test SAML2</h1>')
+        ->redirectTo('/', 200);
 });
